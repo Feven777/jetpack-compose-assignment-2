@@ -177,6 +177,8 @@ fun AddTodoDialog(
 
     AlertDialog(
         onDismissRequest = onDismiss,
+        tonalElevation = 12.dp,
+        containerColor = MaterialTheme.colorScheme.surfaceVariant,
         title = { Text("Add Todo") },
         text = {
             Column {

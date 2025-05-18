@@ -42,7 +42,7 @@ fun TodoApp(navController: NavHostController = rememberNavController()) {
         }
         composable(
             "todo_detail/{id}",
-            arguments = listOf(navArgument("id") { type = NavType.IntType })
+            arguments = listOf(navArgument("id") { type = androidx.navigation.NavType.IntType })
         ) { backStackEntry ->
             val todoId = backStackEntry.arguments?.getInt("id") ?: 0
             TodoDetailScreen(navController = navController, todoId = todoId)
