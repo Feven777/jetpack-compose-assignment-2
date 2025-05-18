@@ -29,12 +29,16 @@ fun TodoDetailScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("Todo Details") },
+                title = { Text("Todo Details",color = MaterialTheme.colorScheme.onPrimary,
+                    style = MaterialTheme.typography.titleLarge
+                ) },
                 navigationIcon = {
                     IconButton(onClick = { navController.popBackStack() }) {
                         Icon(
                             imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                            contentDescription = "Back"
+                            contentDescription = "Back",
+                            tint = MaterialTheme.colorScheme.onPrimary
+
                         )
                     }
                 }
